@@ -70,11 +70,10 @@ const gallery = document.querySelector('.gallery');
 
 const createGallery = ({ preview, original, description }) => `
   <li class="gallery-item">
-    <a class="gallery-link" href="large-image.jpg">
+    <a class="gallery-link" href="${original}">
       <img
         class="gallery-image"
         src="${preview}"
-        data-source="${original}"
         alt="${description}"
       />
     </a>
@@ -86,6 +85,9 @@ gallery.innerHTML = realGallery;
 
 // Ініціалізація SimpleLightbox
 let lightbox = new SimpleLightbox('.gallery a', {
+  captions: true,
   captionsData: 'alt',
+  captionPosition: 'bottom',
   captionDelay: 250,
+  overlayOpacity: 0.8,
 });
