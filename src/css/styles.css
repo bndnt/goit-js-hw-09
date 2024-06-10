@@ -26,6 +26,12 @@
 
 body {
 }
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .container {
   margin: 0 auto;
   max-width: 1128px;
@@ -61,4 +67,92 @@ body {
 }
 .gallery-item:hover .gallery-image {
   transform: scale(1.04);
+}
+form {
+  margin: 0 auto;
+  width: 408px;
+
+  padding: 24px;
+}
+form span {
+  display: block;
+}
+textarea {
+  outline: none;
+  resize: none;
+  width: 100%;
+  max-width: 360px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  transition: all 0.3s;
+}
+textarea:hover {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+textarea:active {
+  border: 1px solid #808080;
+}
+.input__email {
+  width: 360px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  transition: all 0.3s;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.input__email:hover {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+.input__email:active {
+  border: 1px solid #808080;
+}
+.btn__submit {
+  display: block;
+  border: none;
+}
+.label {
+  margin-bottom: 8px;
+}
+.label span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.btn__submit {
+  background: #4e75ff;
+  padding: 8px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.btn__submit:hover {
+  background: #6c8cff;
 }
