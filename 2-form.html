@@ -4,12 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Page 2</title>
   </head>
   <body>
     <section>
-      <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 2</h1>
+      <a href="../index.html">Go to home</a>
+      <form class="feedback-form form" autocomplete="off">
+        <label for="" class="label">
+          <span>Email</span>
+          <input name="email" autofocus class="input__email" type="email" />
+        </label>
+        <lable class="label">
+          <span>Message</span>
+          <textarea name="message" rows="8"> </textarea>
+          <button type="submit" class="btn__submit">Submit</button>
+        </lable>
+      </form>
     </section>
   </body>
 </html>
